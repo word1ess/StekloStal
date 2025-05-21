@@ -1,0 +1,498 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/svgicons/logo-small.svg">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lg-zoom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <p>
+                Изделия из нержавеющей
+                <br>
+                стали и стекла под заказ в Крыму
+            </p>
+            <p>
+                График работы: 08:00 - 20:00
+                <br>
+                Адрес: г. Симферополь
+            </p>
+            <div class="header__phones">
+                <a href="tel:+7 (978) 726 23 42">
+                    <img src="img/svgicons/phone.svg" alt="phone">
+                    7 (978) 726 23 42
+                </a>
+                <a href="#">
+                    написать в WhatsApp
+                    <img src="img/svgicons/watsapp.svg" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <a href="/" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <a href="#">О нас</a>
+                <a href="#">Наши работы</a>
+                <a href="#">Стекло</a>
+                <a href="#">Металл</a>
+                <a href="#">Лестницы под ключ</a>
+            </nav>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- <svg>
+    <use xlink:href="#favorite"></use>
+</svg> -->
+
+            <main class="content">
+                <section class="intro block-with-form">
+                    <img src="img/bg/intro.png" alt="intro-png">
+                    <div class="container">
+                        <main class="block-with-form__row">
+                            <div class="block-with-form__info">
+                                <h1>
+                                    <span>ИЗГОТОВЛЕНИЕ, ПРОДАЖА, МОНТАЖ</span>
+                                    ОГРАЖДЕНИЙ ИЗ 
+                                    СТЕКЛА И СТАЛИ ПОД КЛЮЧ
+                                </h1>
+                            </div>
+                            <div class="block-with-form__form">
+                                <ul>
+                                    <li>свое оборудование</li>
+                                    <li>качество</li>
+                                    <li>быстрый выезд</li>
+                                    <li>гарантия</li>
+                                </ul>
+                                <form action="#">
+                                    <h2>
+                                        Оставить заявку, чтобы получить
+                                        <span>бесплатную консультацию</span>
+                                    </h2>
+                                    <input type="text" name="name" placeholder="Ваше имя">
+                                    <input type="tel" name="phone" placeholder="Ваш номер телефона">
+                                    <button class="btn" type="submit">Получить консультацию</button>
+                                    <p>
+                                        Нажимая кнопку «Получить консультацию», вы даете согласие 
+                                        на обработку ваших персональных данных
+                                    </p>
+                                </form>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="projects section">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>НАШИ УСПЕШНО РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h2>
+                        </header>
+                        <main class="projects__row">
+                            <div class="projects__item">
+                                <img src="img/projects/1.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>ОГРАЖДЕНИЯ</span>
+                                        из стекла
+                                    </h3>
+                                    <p>
+                                        изготовление по индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Феодосия</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/2.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>
+                                            ПЕРИЛА
+                                        </span>
+                                        для подъездов
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Евпатория</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/3.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>ОГРАЖДЕНИЯ</span>
+                                        из нержавейки
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Алушта</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/4.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>ОГРАЖДЕНИЯ</span>
+                                        из стекла
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Ялта</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/5.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>НАВЕС</span>
+                                        для клиента
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Алушта</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/6.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>ОСТЕКЛЕНИЕ</span>
+                                        домов
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>с. Верхняя Кутузовка</p>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="projects__row _hidden">
+                            <div class="projects__item">
+                                <img src="img/projects/1.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>ОГРАЖДЕНИЯ</span>
+                                        из стекла
+                                    </h3>
+                                    <p>
+                                        изготовление по индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Феодосия</p>
+                                </div>
+                            </div>
+                            <div class="projects__item">
+                                <img src="img/projects/2.png" alt="">
+                                <div class="projects__info">
+                                    <h3>
+                                        <span>
+                                            ПЕРИЛА
+                                        </span>
+                                        для подъездов
+                                    </h3>
+                                    <p>
+                                        изготовление по
+                                        индивидуальным 
+                                        размерам
+                                    </p>
+                                    <p>г. Евпатория</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-with-shadow _more-btn">посмотреть еще проекты</button>
+                    </div>
+                </section>
+                <section class="consultation">
+                    <div class="container">
+                        <img src="img/consultation/left.png" class="image-bg left" alt="consultation-left"></img>
+                        <img src="img/consultation/right.png" class="image-bg right" alt="consultation-right"></img>
+                        <div class="consultation__info">
+                            Нас выбирают архитекторы, 
+                            дизайнеры и владельцы недвижимости, 
+                            для которых важны индивидуальный 
+                            подход, безупречный стиль и точность 
+                            исполнения.
+                        </div>
+                        <form action="#" class="consultation__form">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <input type="tel" name="phone" placeholder="Ваш номер телефона">
+                            <input type="text" name="comment" placeholder="Ваш вопрос или сотрудничество">
+                            <button class="btn btn-with-shadow">Получить консультацию</button>
+                        </form>
+                        <p>*Нажимая кнопку «Получить консультацию», вы даете согласие на обработку ваших персональных данных</p>
+                    </div>
+                </section>
+                <section class="work section">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>ДОВЕРЬТЕ РАБОТУ ПРОФЕССИОНАЛАМ</h2>
+                        </header>
+                        <main class="work__main">
+                            <div class="work__item">
+                                <img src="img/work/1.png" alt="">
+                                <p>стеклянные изделия</p>
+                            </div>
+                            <div class="work__item">
+                                <img src="img/work/2.png" alt="">
+                                <p>металлопластиковые окна</p>
+                            </div>
+                            <div class="work__item">
+                                <img src="img/work/3.png" alt="">
+                                <p>навесы из поликарбоната</p>
+                            </div>
+                            <div class="work__item">
+                                <img src="img/work/4.png" alt="">
+                                <p>изделия из нержавейки</p>
+                            </div>
+                            <div class="work__item">
+                                <img src="img/work/5.png" alt="">
+                                <p>ступени из массива</p>
+                            </div>
+                            <div class="work__item">
+                                <img src="img/work/6.png" alt="">
+                                <p>прочие изделия под заказ</p>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="container">
+                        <main class="about__row">
+                            <div class="about__info">
+                                <header class="block-header">
+                                    <h2>О НАС</h2>
+                                    <p>
+                                        Мы берём на себя всё — от проекта до монтажа.
+                                        <br>
+                                        Создаём не просто конструкции — создаём атмосферу дома
+                                    </p>
+                                </header>
+                                <p>
+                                    Изготавливаем элегантные и надежные конструкции из стекла, нержавеющей стали и натурального дерева — для тех, кто ценит эстетику, безопасность и безупречное качество.
+                                    <br>
+                                    Наша команда реализует проекты любой сложности и стиля, используя свой многолетний опыт более 17лет, лазерную сварку, качественные материалы.
+                                    <br>
+                                    <br>
+                                    Мы понимаем, насколько важно быть уверенным в результате, особенно когда речь идет о премиальных решениях, поэтому уже на этапе обсуждения проекта вы получаете детальную визуализацию, отражающую все технические и дизайнерские особенности.
+                                </p>
+                            </div>
+                            <div class="about__images">
+                                <img class="big" src="img/about/big.png" alt="about-big">
+                                <img class="small" src="img/about/small.png" alt="about-small">
+                                <div class="about__text">
+                                    <h3>НАШЕ ОТЛИЧИЕ ОТ ВСЕХ:</h3>
+                                    <p>
+                                        интерьера и экстерьера. ВАМ НЕ НУЖНО ИСКАТЬ ПОДРЯДЧИКОВ 
+                                        Стеклосталь реализует полный цикл работ для вашего дома, 
+                                        ДЛЯ КАЖДОЙ ЗАДАЧИ
+                                    </p>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="statistics">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>Немного статистики о нашей космпании</h2>
+                        </header>
+                        <main class="statistics__row">
+                            <div class="statistics__item">
+                                <h3>1977+</h3>
+                                <p>
+                                    профессионально
+                                    сваренных швов
+                                </p>
+                            </div>
+                            <div class="statistics__item">
+                                <h3>95+</h3>
+                                <p>
+                                    созданных в ручную 
+                                    визуализаций
+                                </p>
+                            </div>
+                            <div class="statistics__item">
+                                <h3>17+</h3>
+                                <p>
+                                    лет опыта и
+                                    профессионализма
+                                </p>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="reviews section">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>Что говорят наши клиенты:</h2>
+                        </header>
+                        <main class="reviews__row">
+                            <div class="reviews__item">
+                                <header class="reviews__stars">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                </header>
+                                <main class="reviews__body">
+                                    <img src="img/reviews/1.png" alt="">
+                                    <p>
+                                        Сергей - специалист высокого уровня! 
+                                        По-моему он знает все, что даже не реально 
+                                        знать! Подсказал нам как правильно сделать 
+                                        нам стеклянную лестницу и при этом 
+                                        съэкономить бюджет! Спасибо) 
+                                        Еще буду обращаться!
+                                    </p>
+                                </main>
+                            </div>
+                            <div class="reviews__item">
+                                <header class="reviews__stars">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                </header>
+                                <main class="reviews__body">
+                                    <img src="img/reviews/2.png" alt="">
+                                    <p>
+                                        Какие ребята молодцы!!! 
+                                        сразу видна рука мастера! 
+                                        Навес сделали очень качественно, 
+                                        ровненько, швы просто великолепные!! 
+                                        их даже не видно!! Спасибо большое!!!
+                                        РЕКОМЕНДУЮ
+                                    </p>
+                                </main>
+                            </div>
+                            <div class="reviews__item">
+                                <header class="reviews__stars">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                    <img src="img/svgicons/star.svg" alt="reviews__star">
+                                </header>
+                                <main class="reviews__body">
+                                    <img src="img/reviews/3.png" alt="">
+                                    <p>
+                                        Являюсь генеральным директором 
+                                        ООО «Крым Адамантия-Строй». 
+                                        Работаем с Сергем уже более 3-х лет! 
+                                        Все заказы доставлены точно в срок, 
+                                        ни одного нарекания на конструкции.
+                                    </p>
+                                </main>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="price block-with-form white">
+                    <img src="img/bg/price.png" alt="intro-png">
+                    <div class="container">
+                        <main class="block-with-form__row">
+                            <div class="block-with-form__info">
+                                <h2>
+                                    УЗНАЙТЕ СТОИМОСТЬ ВАШИХ ИЗДЕЛИЙ
+                                    <br>
+                                    <br>
+                                    Мы свяжемся с Вами в ближайшее время, чтобы обсудить все детали
+                                </h2>
+                            </div>
+                            <div class="block-with-form__form">
+                                <form action="#">
+                                    <h2>
+                                        Оставить заявку, чтобы получить
+                                        <span>бесплатную консультацию</span>
+                                    </h2>
+                                    <input type="text" name="name" placeholder="Ваше имя">
+                                    <input type="tel" name="phone" placeholder="Ваш номер телефона">
+                                    <button class="btn" type="submit">Получить консультацию</button>
+                                    <p>
+                                        Нажимая кнопку «Получить консультацию», вы даете согласие 
+                                        на обработку ваших персональных данных
+                                    </p>
+                                </form>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <img src="img/svgicons/logo-footer.svg" alt="logo-footer">
+            <p>
+                ИП АНДРЕЕВА М.Ю.
+                <br>
+                ИНН 910208286737
+                <br>
+                ОГРНИП 323911200080879
+            </p>
+        </div>
+        <nav class="footer__nav">
+            <img src="img/svgicons/watsapp.svg" alt="">
+            <div class="footer__links">
+                <a href="tel:7 (978) 726 23 42">7 (978) 726 23 42</a>
+                <a href="#">написать в telegram</a>
+                <a href="#">написать в WhatsApp</a>
+                <a href="mailto:andreevsergeu@yandex.ru">
+                    написать на почту:
+                    <br>
+                    andreevsergeu@yandex.ru
+                </a>
+            </div>
+        </nav>
+        <div class="footer__item">
+            <p>
+                График работы: 08:00 - 20:00
+                <br>
+                Адрес: г. Симферополь
+            </p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </body>
+</html>
