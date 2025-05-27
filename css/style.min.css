@@ -93,19 +93,23 @@ h6 {
 @font-face {
   font-family: MyriadPro;
   font-display: swap;
-  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  src:
+    url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("../fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: MyriadPro;
   font-display: swap;
-  src: url("../fonts/MyriadPro-Light.woff2") format("woff2"), url("../fonts/MyriadPro-Light.woff") format("woff");
+  src:
+    url("../fonts/MyriadPro-Light.woff2") format("woff2"),
+    url("../fonts/MyriadPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 h1 {
-  font-size: 32px;
+  font-size: 48px;
   color: #485155;
   font-weight: 700;
 }
@@ -127,7 +131,7 @@ h2 span {
 
 h3 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 24px;
   color: #485155;
 }
 
@@ -138,7 +142,7 @@ input {
   padding: 10px 30px;
   background: #30beef;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 18px;
   color: #fff;
 }
 input:not(:last-child) {
@@ -146,6 +150,9 @@ input:not(:last-child) {
 }
 input::placeholder {
   color: #fff;
+}
+p {
+  font-size: 16px;
 }
 
 .btn {
@@ -156,12 +163,12 @@ input::placeholder {
   padding: 10px 30px;
   background: #30beef;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 18px;
   color: #fff;
 }
 
 .btn-with-shadow {
-  font-size: 17px;
+  font-size: 18px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: inset 0 0 40px 0 rgba(255, 255, 255, 0.5);
@@ -194,11 +201,11 @@ input::placeholder {
   flex: 1 1 auto;
 }
 .block-with-form__form {
-  flex: 0 0 300px;
+  flex: 0 0 400px;
 }
 .block-with-form__form > ul {
   display: grid;
-  grid-template-columns: auto 80px;
+  grid-template-columns: auto 120px;
   gap: 5px 20px;
   margin-bottom: 30px;
 }
@@ -208,7 +215,7 @@ input::placeholder {
   gap: 10px;
   position: relative;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 24px;
   color: #000;
 }
 .block-with-form__form > ul li::before {
@@ -228,11 +235,11 @@ input::placeholder {
 }
 .block-with-form__form form h2 {
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 24px;
 }
 .block-with-form__form form p {
   font-weight: 400;
-  font-size: 7px;
+  font-size: 12px;
   color: #000;
   margin-top: 12.5px;
 }
@@ -288,10 +295,13 @@ input::placeholder {
 .header__burger:hover {
   opacity: 0.8;
 }
-.header__burger::after, .header__burger::before {
+.header__burger::after,
+.header__burger::before {
   content: "";
 }
-.header__burger::after, .header__burger::before, .header__burger span {
+.header__burger::after,
+.header__burger::before,
+.header__burger span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -370,6 +380,10 @@ input::placeholder {
   color: #fff;
 }
 
+.intro {
+  height: calc(100vh - 147px);
+}
+
 .intro .block-with-form__row {
   padding: 40px 0px;
 }
@@ -379,7 +393,7 @@ input::placeholder {
 }
 .projects__row {
   display: grid;
-  grid-template-columns: repeat(2, 375px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-content: space-between;
 }
@@ -399,14 +413,15 @@ input::placeholder {
   display: block;
   aspect-ratio: 2.22/1.63;
   object-fit: cover;
+  flex: 0 0 50%;
 }
 .projects__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 24px;
   background: #485155;
-  flex: 1 1 auto;
+  flex: 0 0 50%;
 }
 .projects__info h3 {
   color: #fff;
@@ -417,13 +432,13 @@ input::placeholder {
 }
 .projects__info p {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 18px;
   color: #fff;
   font-weight: 300;
 }
 .projects__info p:last-child {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
 }
 .projects .btn-with-shadow {
   margin: 30px auto 0px;
@@ -435,10 +450,10 @@ input::placeholder {
   padding: 30px 0px 20px;
 }
 .consultation__info {
-  font-size: 18px;
+  font-size: 24px;
   color: #000;
   margin: 0 auto 64px;
-  max-width: 358px;
+  max-width: 500px;
   position: relative;
   z-index: 2;
 }
@@ -449,7 +464,7 @@ input::placeholder {
   gap: 16px;
 }
 .consultation__form input {
-  font-size: 12px;
+  font-size: 18px;
   padding: 21px;
   border-radius: 8px;
   box-shadow: inset 0 0 40px 0 rgba(255, 255, 255, 0.5);
@@ -460,7 +475,7 @@ input::placeholder {
   text-align: center;
 }
 .consultation__form .btn {
-  font-size: 12px;
+  font-size: 18px;
   padding: 21px;
   flex: 0 0 calc(25% - 16px);
   text-align: center;
@@ -482,7 +497,7 @@ input::placeholder {
 }
 .consultation p {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   color: #000;
   text-align: right;
   margin-top: 16px;
@@ -490,7 +505,7 @@ input::placeholder {
 
 .work__main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 10px 40px;
   justify-content: space-between;
   width: 100%;
@@ -509,9 +524,9 @@ input::placeholder {
   position: absolute;
   inset: 20px;
   top: auto;
-  bottom: 5px;
+  bottom: 10px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 24px;
   color: #f4f4f4;
   z-index: 2;
   text-align: center;
@@ -529,7 +544,6 @@ input::placeholder {
   padding-bottom: 10px;
 }
 .about .block-header h2 {
-  font-size: 28px;
   margin-bottom: 5px;
   color: #000;
 }
@@ -542,7 +556,7 @@ input::placeholder {
 }
 .about__images {
   position: relative;
-  flex: 0 0 365px;
+  flex: 0 0 450px;
 }
 .about__images .big {
   display: block;
@@ -565,16 +579,16 @@ input::placeholder {
   padding: 10px 35px;
 }
 .about__text h3 {
-  font-size: 13px;
+  font-size: 24px;
   color: #fff;
 }
 .about__text p {
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .statistics__row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: space-between;
   gap: 40px;
 }
@@ -595,7 +609,7 @@ input::placeholder {
 
 .reviews__row {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: space-between;
   gap: 40px;
 }
@@ -611,12 +625,12 @@ input::placeholder {
 }
 .reviews__body img {
   display: block;
-  flex: 0 0 48px;
+  flex: 0 0 120px;
   aspect-ratio: 48/82;
 }
 .reviews__body p {
   font-weight: 400;
-  font-size: 9px;
+  font-size: 16px;
   color: #000;
 }
 .reviews__stars {
@@ -657,7 +671,7 @@ input::placeholder {
 }
 .footer__logo p {
   font-weight: 400;
-  font-size: 9px;
+  font-size: 12px;
   color: #000;
 }
 .footer__nav {
@@ -674,7 +688,7 @@ input::placeholder {
 .footer__nav a {
   display: block;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 .footer__nav a:first-child {
@@ -683,7 +697,7 @@ input::placeholder {
 }
 .footer__item p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -710,12 +724,11 @@ body {
   flex: 1 1 auto;
   background: #fff;
   z-index: 2;
-  padding-top: 120px;
+  padding-top: 148px;
 }
 
 .container {
   position: relative;
-  max-width: 944px;
   z-index: 10;
   margin: 0 auto;
   padding: 0px 50px;
@@ -769,7 +782,9 @@ body {
     z-index: 0;
     overflow-y: auto;
     border-radius: 0px;
-    transition: transform 300ms ease 0ms, opacity 400ms ease-in 300ms;
+    transition:
+      transform 300ms ease 0ms,
+      opacity 400ms ease-in 300ms;
     backdrop-filter: blur(5px);
   }
   .header__nav.burger-active {
@@ -786,7 +801,8 @@ body {
   .header__top .container p:first-child {
     display: none;
   }
-  .header__phones a:first-child, .header__phones a:last-child {
+  .header__phones a:first-child,
+  .header__phones a:last-child {
     font-weight: 400;
     font-size: 16px;
   }
@@ -816,6 +832,9 @@ body {
   .block-with-form__form form .btn {
     align-items: center;
     justify-content: center;
+  }
+  .intro {
+    height: fit-content;
   }
   .projects__row {
     grid-template-columns: 1fr;
@@ -946,7 +965,9 @@ body {
   .footer .container {
     flex-wrap: wrap;
   }
-  .footer__logo, .footer__nav, .footer__item {
+  .footer__logo,
+  .footer__nav,
+  .footer__item {
     flex: 1 1 auto;
   }
   .footer__logo p {
@@ -983,5 +1004,8 @@ body {
   }
   .about__text p {
     font-size: 14px;
+  }
+  .projects__info {
+    flex: 1 1 auto;
   }
 }
