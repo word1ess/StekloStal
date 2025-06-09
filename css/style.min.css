@@ -245,9 +245,12 @@ input::placeholder {
   margin-bottom: 32px;
 }
 .block-header p {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   color: #3b3b3a;
+}
+.block-header h2 {
+  font-weight: 600;
 }
 .block-header.center {
   text-align: center;
@@ -371,8 +374,6 @@ input::placeholder {
 
 .intro {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: calc(100vh - 124px);
 }
 .intro .block-with-form__row {
@@ -386,14 +387,14 @@ input::placeholder {
   background: #f3f3f3;
 }
 .projects .container {
-  max-width: 1167px;
+  max-width: 1327px;
 }
 .projects.block-header {
   margin-bottom: 20px;
 }
 .projects__row {
   display: grid;
-  grid-template-columns: repeat(2, 465px);
+  grid-template-columns: repeat(2, 600px);
   gap: 24px;
   justify-content: space-between;
 }
@@ -531,8 +532,10 @@ input::placeholder {
 }
 .work__item::after {
   content: "";
-  background: linear-gradient(180deg, rgba(47, 46, 45, 0) 0%, #2f2e2d 100%);
+  background: linear-gradient(180deg, rgba(47, 46, 45, 0) 0%, #000 80%);
   inset: 0px;
+  top: auto;
+  height: 80px;
   position: absolute;
   z-index: 1;
   text-align: center;
@@ -653,6 +656,9 @@ input::placeholder {
   right: 17px;
 }
 
+.price h2 {
+  font-size: 40px;
+}
 .price .block-with-form__info p {
   color: #fff;
   font-size: 24px;
@@ -753,6 +759,7 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   padding: 0px 80px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1031,6 +1038,12 @@ body {
   }
   .footer__nav a:not(:first-child) {
     padding-left: 0px;
+  }
+  .price h2 {
+    font-size: 28px;
+  }
+  .price .block-with-form__info p {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 576px) {
